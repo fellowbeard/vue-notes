@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NoteToolbar />
+    <NoteComponent />
     <div class="note-container">
       <div class="note-selectors">
         <div class="note-selector active">
@@ -30,10 +31,12 @@
 
 <script>
 import NoteToolbar from "./views/NoteToolbar.vue";
+import NoteComponent from "./views/NoteComponent.vue";
 
 export default {
   components: {
     NoteToolbar,
+    NoteComponent,
   },
   data: function () {
     return {};
